@@ -55,6 +55,7 @@ def base_navbar() -> rx.Component:
                     rx.menu.content(
                         rx.menu.item("Home", on_click=navigation.state.NavState.to_home),
                         rx.menu.item("About", on_click=navigation.state.NavState.to_about_us),
+                        rx.menu.item("Chat", on_click=navigation.state.NavState.to_chat),
                     ),
                     justify="end",
                 ),

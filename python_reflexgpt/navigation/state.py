@@ -10,3 +10,7 @@ class NavState(rx.State):
     def to_about_us(self):
         """on click"""
         return rx.redirect(routes.ABOUT_US_ROUTE)
+
+    def to_chat(self):
+        """on click"""
+        return rx.redirect(routes.CHAT_ROUTE)

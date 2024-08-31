@@ -1,7 +1,7 @@
 """Welcome to Reflex! This file outlines the steps to create a basic app."""
 
 import reflex as rx
-from . import ui, pages, navigation
+from . import chat, pages, navigation
 
 class State(rx.State):
     """The app state."""
@@ -11,3 +11,4 @@ class State(rx.State):
 app = rx.App()
 app.add_page(pages.home_page, route=navigation.routes.HOME_ROUTE)
 app.add_page(pages.about_us_page, route=navigation.routes.ABOUT_US_ROUTE)
+app.add_page(chat.chat_page, route=navigation.routes.CHAT_ROUTE)
